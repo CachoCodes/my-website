@@ -4,6 +4,7 @@ body{
     background: linear-gradient(135deg, #07111f 0%, #1c3d5b 45%, #5b4bff 100%);
     color: #f5f7ff;
     font-family: "Pliant", sans-serif;
+    padding-bottom: 24px;
 }
 
 .main-header{
@@ -33,7 +34,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 14px;
     width: min(90%, 1000px);
     margin: 20px auto;
     padding: 14px 24px;
@@ -49,6 +51,8 @@ body{
     display: flex;
     gap: 10px;
     margin-left: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-link {
@@ -77,8 +81,8 @@ body{
 
 .content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
     width: min(90%, 1000px);
     margin: 40px auto;
     padding: 24px;
@@ -100,6 +104,89 @@ body{
     text-align: left;
     vertical-align: middle;
     padding: 12px;
+}
+
+.section-title {
+    font-weight: normal;
+    margin: 0;
+    color: #f8fbff;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .navbar-img {
+        margin-right: 0;
+    }
+
+    .social-links {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .content {
+        padding: 18px;
+        width: min(94%, 1000px);
+    }
+
+    .section-title {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 16px;
+    }
+}
+
+.info-card {
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.card-logo {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #dce7ff 100%);
+}
+
+.card-logo svg {
+    width: 34px;
+    height: 34px;
+}
+
+.info-card h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e8eeff;
 }
 
 .content-text{
@@ -132,4 +219,48 @@ p{
     font-family: "Pliant", sans-serif;
     font-size: 16px;
     line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .navbar-img {
+        margin-right: 0;
+    }
+
+    .social-links {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .content {
+        padding: 18px;
+        width: min(94%, 1000px);
+    }
+
+    .content table,
+    .content tr,
+    .content td {
+        display: block;
+        width: 100%;
+    }
+
+    .content td {
+        padding: 0 0 16px;
+    }
+
+    .content td.content-img {
+        padding-bottom: 0;
+    }
+
+    .profile-img {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
