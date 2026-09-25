@@ -1,6 +1,13 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="2" y="2" width="60" height="60" rx="18" fill="#665BE8"/>
-  <path d="M16 43L31 18L46 43H16Z" stroke="white" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M22 43L31 29L39 43" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
-  <circle cx="46.5" cy="17.5" r="6.5" fill="#FFD166"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tume-Arandu logo">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#786CFF"/><stop offset="1" stop-color="#5147C8"/></linearGradient>
+    <linearGradient id="paper" x1="18" y1="16" x2="45" y2="47" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E9E7FF"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#bg)"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="17.25" stroke="#FFFFFF" stroke-opacity=".2" stroke-width="1.5"/>
+  <path d="M15.5 44L31.2 16.5L47 44H15.5Z" fill="url(#paper)"/>
+  <path d="M22 44L31.2 29.1L40.2 44" stroke="#665BE8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27.4 37.2H35" stroke="#665BE8" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="47" cy="16.5" r="7" fill="#FFD166"/>
+  <path d="M47 12.9V20.1M43.4 16.5H50.6" stroke="#665BE8" stroke-width="2" stroke-linecap="round"/>
 </svg>
