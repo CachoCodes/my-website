@@ -269,3 +269,5 @@ p{
         font-size: 18px;
     }
 }
+
+.card-logo img{width:48px;height:48px;object-fit:contain}.card-logo.logo-dark{background:#171b27!important}
